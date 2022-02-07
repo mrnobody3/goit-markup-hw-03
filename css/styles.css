@@ -113,6 +113,7 @@ p {
   color: var(--secondary-title-color);
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding: 32px 0;
 }
 .nav-link.current {
   color: var(--hover-main-color);
@@ -128,7 +129,9 @@ p {
 }
 
 .header-link {
+  display: inline-flex;
   color: var(--primery-color);
+  align-items: center;
 }
 .header > .container {
   display: flex;
@@ -136,6 +139,7 @@ p {
 }
 .header-contacts {
   margin-left: auto;
+  /* padding: 32px 0; */
 }
 /* --------HERO---------- */
 
@@ -220,7 +224,7 @@ p {
 }
 .team-img {
   display: block;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 .team-list {
   display: flex;
@@ -232,6 +236,9 @@ p {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.team-content {
+  padding: 30px 0;
 }
 /* -----------FOOTER--------- */
 .footer {
@@ -251,12 +258,14 @@ p {
 }
 .address-contact {
   display: inline-block;
-  margin-top: 9px;
+  /* margin-top: 9px; */
   text-decoration: none;
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
 }
-
+.footer-list > .item:not(:last-child) {
+  margin-bottom: 9px;
+}
 /* ----------PORTFOLIO PAGE--------- */
 
 /* ----------Filter---------- */
@@ -276,7 +285,7 @@ p {
   letter-spacing: 0.03em;
   background-color: #f5f4fa;
   padding: 6px 22px;
-  margin-right: 8px;
+  /* margin-right: 8px; */
 }
 .filter-btn:focus,
 .filter-btn:hover {
@@ -285,7 +294,9 @@ p {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
+.filter > .item:not(:last-child) {
+  margin-right: 8px;
+}
 /* ----------PORTFOLIO---------- */
 
 .filter-list {
@@ -301,14 +312,14 @@ p {
   font-size: 18px;
   line-height: 2;
   color: var(--secondary-title-color);
-  margin-left: 24px;
+  /* margin-left: 24px; */
 }
 
-.portfolio-content {
+.portfolio-text {
   font-size: 16px;
   color: var(--primery-color);
   line-height: 1.88;
-  margin-left: 24px;
+  /* margin-left: 24px; */
 }
 .address-city:hover,
 .address-city:focus,
@@ -321,5 +332,11 @@ p {
   /* width: calc(100% / 4); */
   margin: 15px;
   border: 1px solid #eeeeee;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
+}
+.porfolio-img {
+  display: block;
+}
+.portfolio-content {
+  padding: 20px 24px;
 }
